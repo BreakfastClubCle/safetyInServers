@@ -27,15 +27,3 @@ Server started on ${PORT} \\_\\_>
                         " "`)
   })
 })
-// app.listen(PORT, err => {
-//   if (err) {
-//     throw err
-//   }
-
-//   console.log(`
-//                         __
-//                        <- )
-//                        /( \\
-// Server started on ${PORT} \\_\\_>
-//                         " "`)
-// })

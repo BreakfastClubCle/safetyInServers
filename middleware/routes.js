@@ -31,7 +31,6 @@ router.post('/report', (req, res) => {
 
 // This will talk to the db to delete a report
 router.delete('/report/:id', (req, res) => {
-  console.log({ _id: req.params.id })
   const currDB = db.get()
 
   currDB.collection('reports').deleteOne({ _id: ObjectId(req.params.id) }, (err, result) => {
