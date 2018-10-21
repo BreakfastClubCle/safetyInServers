@@ -20,8 +20,8 @@ body {
   display: grid;
   font-size: 16px;
   grid-template-areas: 'header header'
-                       'aside main'
-                       'aside foot';
+                       'main main'
+                       'foot foot';
   grid-template-rows: 64px 1fr auto;
   grid-template-columns: 10% 90%;
   
