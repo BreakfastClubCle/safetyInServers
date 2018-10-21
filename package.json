@@ -1,0 +1,28 @@
+{
+  "name": "safetyinservers",
+  "version": "1.0.0",
+  "description": "the server api for safetyinnumbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BreakfastClubCle/safetyInServers.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BreakfastClubCle/safetyInServers/issues"
+  },
+  "homepage": "https://github.com/BreakfastClubCle/safetyInServers#readme",
+  "dependencies": {
+    "express": "4.16.4",
+    "mongodb": "3.1.8"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.4"
+  }
+}
