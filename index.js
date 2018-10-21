@@ -9,6 +9,7 @@ const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/safetyinn
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(routes)
+app.use(express.static('./frontend-build'))
 
 
 db.connect(mongoURI, err => {

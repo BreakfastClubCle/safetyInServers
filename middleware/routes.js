@@ -1,3 +1,4 @@
+const path = require('path')
 const express = require('express')
 const router = express.Router()
 const db = require('../utils/db')
@@ -50,6 +51,10 @@ router.delete('/report/:id', (req, res) => {
       return res.json({ success: true, reports: arr })
     })
   })
+})
+
+router.get('/', (req, res) => {
+  return res.sendFile(path.join(__dirname, '..', 'frontend-build', 'index.html'))
 })
 
 module.exports = router
