@@ -4,7 +4,7 @@ const db = require('./utils/db')
 
 const app = express()
 const PORT = process.env.PORT || 3000
-const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017'
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/safetyinnumbers'
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())

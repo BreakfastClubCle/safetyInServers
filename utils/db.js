@@ -16,7 +16,7 @@ const connect = (url, done) => {
     if (connErr) {
       return done(connErr)
     }
-    const db = client.db('safetyinnumbers')
+    const db = process.env.MONGOURI ? client.db('heroku_t6l9n0r1') : client.db('safetyinnumbers')
 
     db.collections((collErr, colls) => {
       if (collErr) {
