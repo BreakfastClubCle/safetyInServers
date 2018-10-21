@@ -13,6 +13,7 @@ app.use(routes)
 
 db.connect(mongoURI, err => {
   if (err) {
+    console.log(err)
     console.log('Unable to create mongo connection')
     
     return process.exit(1)
